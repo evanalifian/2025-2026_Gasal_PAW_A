@@ -6,7 +6,7 @@ $cond = !isset($_SESSION["fruit"]) && !isset($_SESSION["quantity"]);
 
 if ($cond) {
   $_SESSION["fruit"] = "";
-  $_SESSION["quantity"] = 1;
+  $_SESSION["quantity"] = 1;    
 }
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {

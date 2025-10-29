@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <hr>
   <?php if ($_SERVER['REQUEST_METHOD'] == "POST"): ?>
     <h2>Hasil grade nilai</h2>
-    <p>Mata Kuliah: <?= $_POST["nama_mhs"] ?></p>
+    <p>Mata Kuliah: <?php echo $_POST["nama_mhs"] ?></p>
     <p>Mata Kuliah: <?= $_POST["matkul"] ?></p>
     <?php if ($score >= 90 && $score <= 100): ?>
       <p>Nilai: <?= $score ?> (A)</p>
